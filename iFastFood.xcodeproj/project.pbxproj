@@ -18,6 +18,7 @@
 		1A45D53B2A0BE85E00D2861A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D53A2A0BE85E00D2861A /* Persistence.swift */; };
 		1A45D53E2A0BE8B700D2861A /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D53D2A0BE8B700D2861A /* MenuModel.swift */; };
 		1A45D5412A0BFC2000D2861A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D5402A0BFC2000D2861A /* Extensions.swift */; };
+		1AC155712A10D4640063FD84 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC155702A10D4640063FD84 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1A45D53A2A0BE85E00D2861A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1A45D53D2A0BE8B700D2861A /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		1A45D5402A0BFC2000D2861A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1AC155702A10D4640063FD84 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		1A45D5082A0BE50400D2861A /* iFastFood */ = {
 			isa = PBXGroup;
 			children = (
+				1AC1556F2A10D4420063FD84 /* ViewModel */,
 				1A45D5362A0BE67300D2861A /* Views */,
 				1A45D5392A0BE83300D2861A /* Persistence */,
 				1A45D53C2A0BE89100D2861A /* Models */,
@@ -185,6 +188,14 @@
 				1A45D5402A0BFC2000D2861A /* Extensions.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1AC1556F2A10D4420063FD84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AC155702A10D4640063FD84 /* ViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +333,7 @@
 				1A45D53E2A0BE8B700D2861A /* MenuModel.swift in Sources */,
 				1A45D53B2A0BE85E00D2861A /* Persistence.swift in Sources */,
 				1A45D50C2A0BE50400D2861A /* ContentView.swift in Sources */,
+				1AC155712A10D4640063FD84 /* ViewModel.swift in Sources */,
 				1A45D50A2A0BE50400D2861A /* iFastFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
