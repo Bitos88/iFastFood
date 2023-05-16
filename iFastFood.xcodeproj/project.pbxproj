@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A45D50A2A0BE50400D2861A /* iFastFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D5092A0BE50400D2861A /* iFastFoodApp.swift */; };
-		1A45D50C2A0BE50400D2861A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D50B2A0BE50400D2861A /* ContentView.swift */; };
 		1A45D50E2A0BE50400D2861A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A45D50D2A0BE50400D2861A /* Assets.xcassets */; };
 		1A45D5112A0BE50400D2861A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A45D5102A0BE50400D2861A /* Preview Assets.xcassets */; };
 		1A45D51B2A0BE50400D2861A /* iFastFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D51A2A0BE50400D2861A /* iFastFoodTests.swift */; };
@@ -19,6 +18,8 @@
 		1A45D53E2A0BE8B700D2861A /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D53D2A0BE8B700D2861A /* MenuModel.swift */; };
 		1A45D5412A0BFC2000D2861A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D5402A0BFC2000D2861A /* Extensions.swift */; };
 		1AC155712A10D4640063FD84 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC155702A10D4640063FD84 /* ViewModel.swift */; };
+		1AC155732A10E44B0063FD84 /* MainMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC155722A10E44B0063FD84 /* MainMenuListView.swift */; };
+		1AC155752A10EBD90063FD84 /* MainListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC155742A10EBD90063FD84 /* MainListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 /* Begin PBXFileReference section */
 		1A45D5062A0BE50400D2861A /* iFastFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFastFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A45D5092A0BE50400D2861A /* iFastFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFastFoodApp.swift; sourceTree = "<group>"; };
-		1A45D50B2A0BE50400D2861A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A45D50D2A0BE50400D2861A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A45D5102A0BE50400D2861A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A45D5162A0BE50400D2861A /* iFastFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFastFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +54,8 @@
 		1A45D53D2A0BE8B700D2861A /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		1A45D5402A0BFC2000D2861A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1AC155702A10D4640063FD84 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1AC155722A10E44B0063FD84 /* MainMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuListView.swift; sourceTree = "<group>"; };
+		1AC155742A10EBD90063FD84 /* MainListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +163,8 @@
 		1A45D5362A0BE67300D2861A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A45D50B2A0BE50400D2861A /* ContentView.swift */,
+				1AC155722A10E44B0063FD84 /* MainMenuListView.swift */,
+				1AC155742A10EBD90063FD84 /* MainListCellView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -331,8 +334,9 @@
 			files = (
 				1A45D5412A0BFC2000D2861A /* Extensions.swift in Sources */,
 				1A45D53E2A0BE8B700D2861A /* MenuModel.swift in Sources */,
+				1AC155732A10E44B0063FD84 /* MainMenuListView.swift in Sources */,
 				1A45D53B2A0BE85E00D2861A /* Persistence.swift in Sources */,
-				1A45D50C2A0BE50400D2861A /* ContentView.swift in Sources */,
+				1AC155752A10EBD90063FD84 /* MainListCellView.swift in Sources */,
 				1AC155712A10D4640063FD84 /* ViewModel.swift in Sources */,
 				1A45D50A2A0BE50400D2861A /* iFastFoodApp.swift in Sources */,
 			);
