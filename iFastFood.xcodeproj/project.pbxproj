@@ -20,6 +20,7 @@
 		1AC155712A10D4640063FD84 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC155702A10D4640063FD84 /* ViewModel.swift */; };
 		1AC155732A10E44B0063FD84 /* MainMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC155722A10E44B0063FD84 /* MainMenuListView.swift */; };
 		1AC155752A10EBD90063FD84 /* MainListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC155742A10EBD90063FD84 /* MainListCellView.swift */; };
+		1AC946302A13D63900486380 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC9462F2A13D63900486380 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		1AC155702A10D4640063FD84 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1AC155722A10E44B0063FD84 /* MainMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuListView.swift; sourceTree = "<group>"; };
 		1AC155742A10EBD90063FD84 /* MainListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCellView.swift; sourceTree = "<group>"; };
+		1AC9462F2A13D63900486380 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			children = (
 				1AC155722A10E44B0063FD84 /* MainMenuListView.swift */,
 				1AC155742A10EBD90063FD84 /* MainListCellView.swift */,
+				1AC9462F2A13D63900486380 /* DetailView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A45D5412A0BFC2000D2861A /* Extensions.swift in Sources */,
+				1AC946302A13D63900486380 /* DetailView.swift in Sources */,
 				1A45D53E2A0BE8B700D2861A /* MenuModel.swift in Sources */,
 				1AC155732A10E44B0063FD84 /* MainMenuListView.swift in Sources */,
 				1A45D53B2A0BE85E00D2861A /* Persistence.swift in Sources */,

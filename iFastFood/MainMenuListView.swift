@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainMenuListView: View {
-    @ObservedObject var vm = ViewModel()
+    @EnvironmentObject var vm: ViewModel
     
     var body: some View {
         NavigationStack {
@@ -16,13 +16,21 @@ struct MainMenuListView: View {
                 ForEach(vm.menuItems) { section in
                     Section(section.name) {
                         ForEach(section.items) { dish in
-                            NavigationLink(value: dish) {
-                                MainListCellView(menuDish: dish)
+                            if vm.showDish(dish: dish) {
+                                NavigationLink(value: dish) {
+                                    MainListCellView(menuDish: dish)
+                                }
                             }
                         }
                     }
                 }
             }
+            .animation(.spring(), value: vm.search)
+            .searchable(text: $vm.search)
+            .navigationDestination(for: MenuDishes.self) { dish in
+                DetailView(dish: dish)
+            }
+            .navigationTitle("Menu")
         }
     }
 }
@@ -30,5 +38,6 @@ struct MainMenuListView: View {
 struct MainMenuListView_Previews: PreviewProvider {
     static var previews: some View {
         MainMenuListView()
+            .environmentObject(ViewModel())
     }
 }
