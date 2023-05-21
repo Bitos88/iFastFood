@@ -29,6 +29,5 @@ final class ViewModel: ObservableObject {
     
     func addDishToOrder(dish: MenuDishes) {
         orderedDishes.append(dish)
-        print(orderedDishes)
     }
 }
