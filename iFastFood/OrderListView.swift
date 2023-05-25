@@ -10,6 +10,7 @@ import SwiftUI
 struct OrderListView: View {
     @EnvironmentObject var vmOrder: OrderViewModel
     @State private var isEditing = false
+    @State private var navigate = false
 
     var body: some View {
         NavigationStack {
@@ -23,19 +24,25 @@ struct OrderListView: View {
                         }
                     }
                     .onDelete { vmOrder.orderedDishes.remove(atOffsets: $0) }
-                    .onMove { vmOrder.orderedDishes.move(fromOffsets: $0, toOffset: $1) }
                 }
                 Section {
-                    Button {
-                        
-                    } label: {
-                        Text("Confirm Order")
+                    
+                    NavigationLink(destination: ConfirmOrderView()) {
+                        Button {
+                           
+                        } label: {
+                            Text("Confirm Order")
+                        }
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .buttonStyle(.bordered)
                     }
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .buttonStyle(.bordered)
                     .listRowBackground(Color.clear)
+                    
                 }
                 .disabled(vmOrder.orderedDishes.isEmpty)
+            }
+            .navigationDestination(for: MenuDishes.self) { _ in
+                ConfirmOrderView()
             }
             .navigationTitle("Order")
         }
